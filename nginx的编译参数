@@ -1,0 +1,24 @@
+nginx的编译参数
+	使用命令： nginx -V 
+
+	--prefix=/etc/nginx                             安装目的的目录和路径
+	--sbin-path=/usr/sbin/nginx
+	--modules-path=/usr/lib64/nginx/modules
+	--conf-path=/etc/nginx/nginx.conf
+	--error-lgo-path=/var/log/nginx/error.log
+	--http-log-path=/varlog/nginx/access.log
+	--pid-path=/var/run/nginx.pid
+	--lock-path=/var/run/nginx.lock 
+
+	--http-client-body-temp-path=/var/cache/nginx/client_temp  执行对应模块时，nginx所保留的临时文件
+	--http-proxy-temp-path=/var/cache/nginx/proxy_temp 
+	--http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp 
+	--http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp 
+	--http-scgi-temp-path=/var/cache/nginx/scgi_temp
+
+	--user=nginx        设定nginx进程启动的用户和组用户
+	--group=nginx
+
+	--with-cc-opt=parameters  设置额外的参数将被添加到CFLAGS变量
+
+	--with-ld-opt=parameters  设置附加的参数，链接系统库
